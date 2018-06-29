@@ -11,6 +11,29 @@
     <title>Hello, world!</title>
   </head>
   <body>
+    <header>
+        <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Meditation</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">News</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Sport</a>
+            <a class="dropdown-item" href="#">Politics</a>
+            <a class="dropdown-item" href="#">Tech</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Brainstorming</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </header
     <h1>Hello, world!</h1>
 
     <!-- Optional JavaScript -->
