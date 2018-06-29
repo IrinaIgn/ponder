@@ -7,11 +7,50 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
     <title>Hello, world!</title>
+    <style>
+    .vertical-menu {
+        width: 70px;
+        float: right;
+    }
+
+    .vertical-menu a {
+        background-color: #eee;
+        color: black;
+        display: block;
+        padding: 12px;
+        text-decoration: none;
+    }
+
+    .vertical-menu a:hover {
+        background-color: #ccc;
+    }
+
+    .vertical-menu a.active {
+        background-color: #4CAF50;
+        color: white;
+    }
+    </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1>Vertical Menu</h1>
+
+    <div class="vertical-menu">
+      <a href="#" class="active">Home</a>
+      <a href="#">Leadership</a>
+      <a href="#">Psychology 2</a>
+      <a href="#">Brainstorming 3</a>
+      <a href="#">Dictionary 4</a>
+      <a href="#">News</a><!-- Sport, Politics, Tech--> 
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+      <a href="#">Link 4</a>
+      <a href="#">Link 4</a>
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+      <a href="#">Link 4</a>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
