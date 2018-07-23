@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Avision</title>
+<title>Ponder</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Demo project">
@@ -26,7 +26,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="header_content d-flex flex-row align-items-center justify-content-start">
-						<div class="logo"><a href="#">avision</a></div>
+						<div class="logo"><a href="#">Ponder</a></div>
 						<nav class="main_nav">
 							<ul>
 								<li class="active"><a href="index.html">Home</a></li>
@@ -39,14 +39,14 @@
 						</nav>
 						<div class="search_container ml-auto">
 							<div class="weather">
-								<div class="temperature">+10°</div>
+								<div id="temperatura" class="temperature">+10°</div>
 								<img class="weather_icon" src="images/cloud.png" alt="">
 							</div>
 							<form action="#">
 								<input type="search" class="header_search_input" required="required" placeholder="Type to Search...">
 								<img class="header_search_icon" src="images/search.png" alt="">
 							</form>
-							
+
 						</div>
 						<div class="hamburger ml-auto menu_mm">
 							<i class="fa fa-bars trans_200 menu_mm" aria-hidden="true"></i>
@@ -79,16 +79,16 @@
 			</ul>
 		</nav>
 	</div>
-	
+
 	<!-- Home -->
 
 	<div class="home">
-		
+
 		<!-- Home Slider -->
 
 		<div class="home_slider_container">
 			<div class="owl-carousel owl-theme home_slider">
-				
+
 				<!-- Slider Item -->
 				<div class="owl-item">
 					<div class="home_slider_background" style="background-image:url(images/home_slider.jpg)"></div>
@@ -143,7 +143,7 @@
 
 							</div>
 						</div>
-						
+
 						<div class="home_slider_next_container">
 							<div class="home_slider_next" style="background-image:url(images/home_slider_next.jpg)">
 								<div class="home_slider_next_background trans_400"></div>
@@ -211,7 +211,7 @@
 
 							</div>
 						</div>
-						
+
 						<div class="home_slider_next_container">
 							<div class="home_slider_next" style="background-image:url(images/home_slider_next.jpg)">
 								<div class="home_slider_next_background trans_400"></div>
@@ -279,7 +279,7 @@
 
 							</div>
 						</div>
-						
+
 						<div class="home_slider_next_container">
 							<div class="home_slider_next" style="background-image:url(images/home_slider_next.jpg)">
 								<div class="home_slider_next_background trans_400"></div>
@@ -317,7 +317,7 @@
 
 		</div>
 	</div>
-	
+
 	<!-- Page Content -->
 
 	<div class="page_content">
@@ -365,7 +365,7 @@
 									<div class="card card_largest_with_image grid-item">
 										<img class="card-img-top" src="images/post_1.jpg" alt="https://unsplash.com/@cjtagupa">
 										<div class="card-body">
-											<div class="card-title"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
+											<div class="card-title"><a href="post.html">XXX</a></div>
 											<p class="card-text">Pick the yellow peach that looks like a sunset with its red, orange, and pink coat skin, peel it off with your teeth. Sink them into unripened...</p>
 											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
 										</div>
@@ -465,7 +465,7 @@
 							</div>
 							<div class="section_content">
 								<div class="grid clearfix">
-									
+
 									<!-- Large Card With Background -->
 									<div class="card card_large_with_background grid-item">
 										<div class="card_background" style="background-image:url(images/post_8.jpg)"></div>
@@ -474,7 +474,7 @@
 											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
 										</div>
 									</div>
-									
+
 									<!-- Large Card With Image -->
 									<div class="card grid-item card_large_with_image">
 										<img class="card-img-top" src="images/post_9.jpg" alt="">
@@ -493,7 +493,7 @@
 											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
 										</div>
 									</div>
-									
+
 									<!-- Default Card With Background -->
 
 									<div class="card card_default card_default_with_background grid-item">
@@ -527,7 +527,7 @@
 									</div>
 
 								</div>
-								
+
 							</div>
 						</div>
 
@@ -542,7 +542,7 @@
 									<div class="col">
 										<div class="videos">
 											<div class="player_container">
-												<div id="P1" class="player" 
+												<div id="P1" class="player"
 												     data-property="{videoURL:'2ScS5kwm7nI',containment:'self',startAt:0,mute:false,autoPlay:false,loop:false,opacity:1}">
 												</div>
 											</div>
@@ -607,8 +607,8 @@
 								<div class="section_title">Latest Articles</div>
 							</div>
 							<div class="section_content">
-								<div class="grid clearfix">
-									
+								<div id="one" class="grid clearfix">
+
 									<!-- Small Card With Image -->
 									<div class="card card_small_with_image grid-item">
 										<img class="card-img-top" src="images/post_10.jpg" alt="">
@@ -671,39 +671,8 @@
 										</div>
 									</div>
 
-									<!-- Small Card Without Image -->
-									<div class="card card_default card_small_no_image grid-item">
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
-										</div>
-									</div>
-
-									<!-- Small Card Without Image -->
-									<div class="card card_default card_small_no_image grid-item">
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
-											<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
-										</div>
-									</div>
-
-									<!-- Default Card With Background -->
-									<div class="card card_default card_default_with_background grid-item">
-										<div class="card_background" style="background-image:url(images/post_12.jpg)"></div>
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a></div>
-										</div>
-									</div>
-
-									<!-- Default Card With Background -->
-									<div class="card card_default card_default_with_background grid-item">
-										<div class="card_background" style="background-image:url(images/post_6.jpg)"></div>
-										<div class="card-body">
-											<div class="card-title card-title-small"><a href="post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most</a></div>
-										</div>
-									</div>
 								</div>
-								
+
 							</div>
 						</div>
 
@@ -1466,5 +1435,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="plugins/masonry/masonry.js"></script>
 <script src="plugins/masonry/images_loaded.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
