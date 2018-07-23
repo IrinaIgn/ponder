@@ -1,18 +1,14 @@
 $(function(){
 
-    // function getWeather()
-    // {
-    //   $.get("http://api.openweathermap.org/data/2.5/forecast?zip=90401,us&APPID=21fcff90ee254edd442c00e3b412cf11&units=imperial", function(response) {
-    //     // console.log(response);
-    //
-    //       for(index in response.list) {
-    //
-    //             var list = response.list[index];
-    //             var temp = '+' + list.main.temp + '°';
-    //             $('#temperatura').append(temp);
-    //       };
-    //   });
-    // };
+    function getWeather()
+    {
+      $.get("http://api.openweathermap.org/data/2.5/forecast?zip=90401,us&APPID=21fcff90ee254edd442c00e3b412cf11&units=imperial", function(response) {
+        // console.log(response);
+        var temp1 = Math.round(response.list[0].main.temp);
+        var temp2 = '+' + temp1 + '°';
+        $('#temperatura').append(temp2);
+      });
+    };
 
     function getNews()
     {
@@ -42,7 +38,7 @@ $(function(){
   };
 
 
-    // getWeather();
+    getWeather();
     getNews();
 
 });// onload
